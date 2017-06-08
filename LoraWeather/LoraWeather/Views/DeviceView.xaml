@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoraWeather.Views.DeviceView"
+             Title="Device">
+    
+    <StackLayout Spacing="0">
+        <Label Text="Device ID:" FontAttributes="Bold" Margin="5, 0, 0, 0"/>
+        <Label Text="{Binding DeviceId}" Margin="5, 0, 0, 15"/>
+
+        <Label Text="Battery status:" FontAttributes="Bold" Margin="5, 0, 0, 0" IsVisible="{Binding IsVisible}"/>
+        <Label Text="{Binding Battery}" Margin="5, 0, 0, 15" IsVisible="{Binding IsVisible}"/>
+
+        <Label Text="The Things Network ID:" FontAttributes="Bold" Margin="5, 0, 0, 0"/>
+        <Label Text="{Binding TTNId}" Margin="5, 0, 0, 15"/>
+
+        <Label Text="Description:" FontAttributes="Bold" Margin="5, 0, 0, 0"/>
+        <Label Text="{Binding Description}" Margin="5, 0, 0, 15"/>
+
+        <Label Text="First online:" FontAttributes="Bold" Margin="5, 0, 0, 0" IsVisible="{Binding IsVisible}"/>
+        <Label Text="{Binding FirstUp}" Margin="5, 0, 0, 15" IsVisible="{Binding IsVisible}"/>
+
+        <Label Text="Last seen:" FontAttributes="Bold" Margin="5, 0, 0, 0" IsVisible="{Binding IsVisible}"/>
+        <Label Text="{Binding LastSeen}" Margin="5, 0, 0, 20" IsVisible="{Binding IsVisible}"/>
+
+        <Label Text="Packages send:" FontAttributes="Bold" Margin="5, 0, 0, 0" IsVisible="{Binding IsVisible}"/>
+        <Label Text="{Binding PackagesSend}" Margin="5, 0, 0, 15"/>
+        
+        <Button Text="Data" Command="{Binding ShowDataView}" IsEnabled="{Binding IsEnabled}" IsVisible="{Binding IsVisible}"/>
+
+        <ActivityIndicator IsRunning="{Binding IsBusy}" />
+    </StackLayout>
+</ContentPage>

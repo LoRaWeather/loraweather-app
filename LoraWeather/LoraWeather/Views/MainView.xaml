@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:custom="clr-namespace:LoraWeather.Custom;assembly=LoraWeather"
+             xmlns:viewModels="clr-namespace:LoraWeather.ViewModels;assembly=LoraWeather"
+             x:Class="LoraWeather.Views.MainView"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.BindingContext>
+        <viewModels:MainViewModel/>
+    </ContentPage.BindingContext>
+    
+    <StackLayout>
+        <custom:CustomMap              
+            IsShowingUser="true"
+                         MapType="Street"
+                         ToRegion="{Binding ToRegionCustomLocation}"
+                         AllPins="{Binding MyPins}"/>
+    </StackLayout>
+
+</ContentPage>
