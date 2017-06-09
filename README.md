@@ -1,8 +1,8 @@
 # loraweather-app
-This project is for the Xamarin Forms app that has been created for the LoRaWeather project. See the loraweather organization page on GitHub for more info, you can find the page [here](https://github.com/LoRaWeather).
+This project is for the Xamarin Forms app that has been created for the LoRaWeather project. See the LoRaWeather organization page on GitHub for more info, you can find the page [here](https://github.com/LoRaWeather).
 
 ### Program
-When you open the app a map of the netherlands will be shown with all avaible devices as pins. You can click on a pin so see it details. Then you can click on the popup to go to a new page. on this page you can find all info about the device. On that page there is a button to go to another page. On that page the data of the sensor will be displayed.
+When you open the app a map of the Netherlands will be shown with all available devices as pins. You can click on a pin so see it details. Then you can click on the popup to go to a new page. on this page you can find all info about the device. On that page there is a button to go to another page. On that page the data of the sensor will be displayed.
 
 ### Some pictures of the application.
 Splash screen              | Begin page
